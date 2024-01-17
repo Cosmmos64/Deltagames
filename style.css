@@ -1,9 +1,6 @@
-html {
-  height: 100%;
-  width: 100%;
-}
 body {
   font-family: 'Kanit', sans-serif;
+  height: auto;
   margin: 0;
   padding: 0;
   background: rgb(0,0,51);
@@ -15,7 +12,7 @@ h1 {
   padding: 0;
   text-align: center;
   font-size: 150px;
-  color: #112;
+  color: #000;
   text-shadow: 0px 0px 10px blue;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
@@ -29,7 +26,9 @@ h2 {
   padding: 0;
   text-align: center;
   font-size: 60px;
-  color: #33f;
+  font-weight: 300;
+  color: #08f;
+  text-shadow: 0px 0px 10px blue;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -60,4 +59,48 @@ h2 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+}
+.searchwrap {
+  display: flex;
+  width: auto;
+  height: 60px;
+  margin: 20px;
+  border-radius: 5px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+input {
+  width: 20%;
+  margin: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.0);
+}
+.game {
+  width: 100px;
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #08f;
+  
+}
+#gamelist {
+  display: flex;
+  height: auto;
+  width: auto;
+  margin: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.game a {
+  text-decoration: none;
+}
+.game a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
 }
