@@ -4,6 +4,10 @@ body {
   margin: 0;
   padding: 0;
   background: rgb(0,0,51);
+}
+.wrapper {
+  padding-top: 20px;
+  background: rgb(0,0,51);
   background: linear-gradient(0deg, rgba(0,0,51,1) 0%, rgba(35,35,128,1) 100%);
 }
 h1 {
@@ -50,7 +54,8 @@ h2 {
   display: flex;
   width: auto;
   height: 80px;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   position: sticky;
   border-radius: 5px;
   /* From https://css.glass */
@@ -59,6 +64,18 @@ h2 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+}
+.navbar li {
+  list-style: none;
+  margin: 0 20px;
+  display: inline-flex;
+  align-items: center;
+}
+.navbar li a {
+  text-decoration: none;
+}
+.navbar li img {
+  width: 30px;
 }
 .searchwrap {
   display: flex;
@@ -80,8 +97,8 @@ input {
   background: rgba(255, 255, 255, 0.0);
 }
 .game {
-  width: 100px;
-  height: 150px;
+  width: 150px;
+  height: 200px;
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -90,6 +107,7 @@ input {
 }
 #gamelist {
   display: flex;
+  flex-wrap: wrap;
   height: auto;
   width: auto;
   margin: 20px;
@@ -100,7 +118,7 @@ input {
   text-decoration: none;
 }
 .game a img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 15px;
 }
