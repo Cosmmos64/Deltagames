@@ -3,13 +3,15 @@ body {
   height: auto;
   margin: 0;
   padding: 0;
-  background: rgb(0,0,51);
+  background: rgb(0, 0, 51);
 }
+
 .wrapper {
   padding-top: 20px;
-  background: rgb(0,0,51);
-  background: linear-gradient(0deg, rgba(0,0,51,1) 0%, rgba(35,35,128,1) 100%);
+  background: rgb(0, 0, 51);
+  background: linear-gradient(0deg, rgba(0, 0, 51, 1) 0%, rgba(35, 35, 128, 1) 100%);
 }
+
 h1 {
   opacity: 0;
   margin: 0;
@@ -21,9 +23,10 @@ h1 {
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay:0.51s;
+  animation-delay: 0.51s;
   transform: translateY(30px);
 }
+
 h2 {
   opacity: 0;
   margin: 0;
@@ -36,7 +39,7 @@ h2 {
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay:1s;
+  animation-delay: 1s;
   transform: translateY(30px);
 }
 
@@ -45,18 +48,20 @@ h2 {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
+
 .navbar {
   display: flex;
   width: auto;
   height: 80px;
   margin-left: 20px;
   margin-right: 20px;
-  position: sticky;
+  margin-top: 0;
   border-radius: 5px;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.1);
@@ -65,18 +70,22 @@ h2 {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+
 .navbar li {
   list-style: none;
   margin: 0 20px;
   display: inline-flex;
   align-items: center;
 }
+
 .navbar li a {
   text-decoration: none;
 }
+
 .navbar li img {
   width: 30px;
 }
+
 .searchwrap {
   display: flex;
   width: auto;
@@ -90,12 +99,14 @@ h2 {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+
 input {
   width: 20%;
   margin: 5px;
   border: none;
   background: rgba(255, 255, 255, 0.0);
 }
+
 .game {
   width: 150px;
   height: 200px;
@@ -103,8 +114,9 @@ input {
   margin-bottom: 20px;
   text-align: center;
   color: #08f;
-  
+
 }
+
 #gamelist {
   display: flex;
   flex-wrap: wrap;
@@ -114,9 +126,11 @@ input {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .game a {
   text-decoration: none;
 }
+
 .game a img {
   width: 150px;
   height: 150px;
